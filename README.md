@@ -1,92 +1,101 @@
-documentation=======================================
-Laravel E-Commerce Project Setup Guide
-=======================================
+# Laravel E-Commerce Project Setup Guide
 
-Follow the steps below to get your Laravel e-commerce project up and running locally.
+Follow these CLI-based steps to set up your Laravel e-commerce project locally.
 
--------------------------------
-1. Clone or Download the Project
--------------------------------
-- Clone the repository:
-  git clone <your-repo-url>
+---
 
-OR
+## 1. Clone or Download the Project
 
-- Download the ZIP and extract it to your preferred directory.
+```sh
+# Clone the repository
+gh repo clone dev-rakib03/Interview-Task-Ecommerce-Laravel-Blade-Tailwind
 
------------------------------
-2. Create the .env File
------------------------------
-- Duplicate the `.env.example` file and rename it to `.env`.
+# OR download and extract the ZIP (manual step)
+```
 
------------------------------
-3. Install PHP Dependencies
------------------------------
-- Run the following command in the project root:
-  composer install
+---
 
------------------------------
-4. Install Node Dependencies
------------------------------
-- Run the following command:
-  npm install
+## 2. Create the `.env` File
 
-------------------------------------------------
-5. Generate App Key & Create Storage Symlink
-------------------------------------------------
-- Generate the application key:
-  php artisan key:generate
+```sh
+cp .env.example .env
+```
 
-- Create the storage symlink:
-  php artisan storage:link
+---
 
------------------------------
-6. Set Up Database Connection
------------------------------
-- Open the `.env` file.
-- Update the following lines with your local DB credentials:
+## 3. Install PHP Dependencies
 
-  DB_CONNECTION=mysql  
-  DB_HOST=127.0.0.1  
-  DB_PORT=3306  
-  DB_DATABASE=your_database_name  
-  DB_USERNAME=your_database_user  
-  DB_PASSWORD=your_database_password  
+```sh
+composer install
+```
 
------------------------------
-7. Run Migrations
------------------------------
-- Run the following command to migrate tables:
-  php artisan migrate
+---
 
-----------------------------------------------------
-8. Start the Development Servers (Backend & Frontend)
-----------------------------------------------------
-- Start Laravel server:
-  php artisan serve
+## 4. Install Node Dependencies
 
-- In a new terminal, run Vite dev server:
-  npm run dev
+```sh
+npm install
+```
 
------------------------------
-9. Admin Panel
------------------------------
-- Category Management:
-  http://localhost:8080/admin/categories
+---
 
-- Product Management:
-  http://localhost:8080/admin/products
+## 5. Generate App Key & Create Storage Symlink
 
------------------------------
-10. Frontend Routes
------------------------------
-- Home Page:
-  http://localhost:8080/
+```sh
+php artisan key:generate
+php artisan storage:link
+```
 
-- Shop Page:
-  http://localhost:8080/shop
+---
 
------------------------------
-Done!
------------------------------
+## 6. Set Up Database Connection
+
+Edit your `.env` file with your database credentials:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+```
+
+---
+
+## 7. Run Migrations
+
+```sh
+php artisan migrate
+```
+
+---
+
+## 8. Start the Development Servers (Backend & Frontend)
+
+```sh
+# Start Laravel backend server
+php artisan serve
+
+# In a new terminal, start Vite dev server
+npm run dev
+```
+
+---
+
+## 9. Admin Panel
+
+- Category Management: [http://localhost:8080/admin/categories](http://localhost:8080/admin/categories)
+- Product Management: [http://localhost:8080/admin/products](http://localhost:8080/admin/products)
+
+---
+
+## 10. Frontend Routes
+
+- Home Page: [http://localhost:8080/](http://localhost:8080/)
+- Shop Page: [http://localhost:8080/shop](http://localhost:8080/shop)
+
+---
+
+**Done!**  
 You are now ready to use the Laravel e-commerce system.
