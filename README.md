@@ -85,15 +85,15 @@ npm run dev
 
 ## 9. Admin Panel
 
-- Category Management: [http://localhost:8080/admin/categories](http://localhost:8080/admin/categories)
-- Product Management: [http://localhost:8080/admin/products](http://localhost:8080/admin/products)
+- Category Management: [http://localhost:8080/admin/categories](http://localhost:8000/admin/categories)
+- Product Management: [http://localhost:8080/admin/products](http://localhost:8000/admin/products)
 
 ---
 
 ## 10. Frontend Routes
 
-- Home Page: [http://localhost:8080/](http://localhost:8080/)
-- Shop Page: [http://localhost:8080/shop](http://localhost:8080/shop)
+- Home Page: [http://localhost:8080/](http://localhost:8000/)
+- Shop Page: [http://localhost:8080/shop](http://localhost:8000/shop)
 
 ---
 
