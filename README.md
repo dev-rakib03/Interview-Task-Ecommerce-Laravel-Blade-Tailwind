@@ -92,8 +92,8 @@ npm run dev
 
 ## 10. Frontend Routes
 
-- Home Page: [http://localhost:8080/](http://localhost:8000/)
-- Shop Page: [http://localhost:8080/shop](http://localhost:8000/shop)
+- Home Page: [http://localhost:8000/](http://localhost:8000/)
+- Shop Page: [http://localhost:8000/shop](http://localhost:8000/shop)
 
 ---
 
